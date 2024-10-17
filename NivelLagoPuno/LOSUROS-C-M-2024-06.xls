@@ -1,0 +1,896 @@
+
+<br />
+<b>Warning</b>:  include_once(../../../../include/_functionTest.php): Failed to open stream: No such file or directory in <b>/var/www/html/mapas/mapa-estaciones-2/export.php</b> on line <b>32</b><br />
+<br />
+<b>Warning</b>:  include_once(): Failed opening '../../../../include/_functionTest.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php:/usr/share/pear:/usr/share/php') in <b>/var/www/html/mapas/mapa-estaciones-2/export.php</b> on line <b>32</b><br />
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenidos - SENAMHI</title>
+
+    <style type="text/css">
+        .body01 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            text-align: left;
+            font-weight: bold;
+            color: #072C54
+        }
+
+        #container {
+            width: 100%;
+            text-align: center;
+        }
+
+        #izquierda {
+            float: left;
+            width: auto;
+            height: 20px;
+            text-align: left;
+        }
+
+        #derecha {
+            float: right;
+            width: auto;
+            height: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="body01" id="container">
+    <div id="izquierda">
+        Fuente: SENAMHI / DRD<br>
+        * Datos sin control de calidad.<br>
+        * El uso de estos datos ser&aacute; de entera responsabilidad del usuario.<br>
+    </div>
+
+    <div id="derecha">
+        Leyenda: <br>
+        * S/D = Sin Datos.<br>
+        * T = Trazas (Precipitaci&oacute;n < 0.1 mm/d&iacute;a).<br>    </div>
+
+
+</div>
+<br>
+<br>
+<div>
+    <table width="750" border="0" class="body01" bordercolor="#999999" cellpadding="1" cellspacing="1"
+           align="center">
+        <tr aling=center bgcolor=#003366>
+            <td colspan="6" bgcolor=#666666>
+                <div align=center>
+                    <b>
+                        <font color=#F4F4F4>Estaci&oacute;n
+                            : LOS UROS                        </font>
+                    </b>
+                </div>
+            </td>
+        </tr>
+        <tr aling=center>
+            <td>
+                <div align="right">Departamento&nbsp;:&nbsp;</div>
+            </td>
+            <td>PUNO</td>
+            <td>
+                <div align="right">Provincia&nbsp;:&nbsp;</div>
+            </td>
+            <td>PUNO</td>
+            <td>
+                <div align="right">Distrito&nbsp;:&nbsp;</div>
+            </td>
+            <td>PUNO</td>
+
+        </tr>
+        <tr aling=center>
+            <td>
+                <div align="right">Latitud&nbsp;:&nbsp;</div>
+            </td>
+            <td>15°49'13.4''</td>
+            <td>
+                <div align="right">Longitud&nbsp;:&nbsp;</div>
+            </td>
+            <td>69°58'26.9''</td>
+            <td>
+                <div align="right">Altitud&nbsp;:&nbsp;</div>
+            </td>
+            <td>3819 msnm.</td>
+
+        </tr>
+        <tr aling=center>
+            <td>
+                <div align="right">Tipo&nbsp;:&nbsp;</div>
+            </td>
+            <td>CO - Meteorológica</td>
+
+            <td>
+                <div align="right">C&oacute;digo&nbsp;:&nbsp;</div>
+            </td>
+            <td>100088</td>
+        </tr>
+    </table>
+</div>
+
+<table width="100%" border="1" class="body01" bordercolor="#999999" cellpadding="0" cellspacing="1" align="center"
+       id="dataTable">
+                <tr aling=center bgcolor=#003366>
+                <td rowspan="2" bgcolor=#666666>
+                    <div align=center>
+                        <b>
+                            <font color=#F4F4F4>A&Ntilde;O / MES / D&Iacute;A</font>
+                        </b>
+                    </div>
+                </td>
+                <!---->
+                <td colspan="2" bgcolor=#A0A0A0>
+                    <div align=center>
+                        <b>
+                            <font color=#F4F4F4>TEMPERATURA (&deg;C)</font>
+                        </b>
+                    </div>
+                </td>
+
+                <td rowspan="2" bgcolor="#A0A0A0">
+                    <div align="center">
+                        <b>
+                            <font color="#F4F4F4">HUMEDAD RELATIVA (%)</font>
+                        </b>
+                    </div>
+                </td>
+                <td colspan="1" bgcolor=#A0A0A0>
+                    <div align=center>
+                        <b>
+                            <font color=#F4F4F4>PRECIPITACI&Oacute;N (mm/d&iacute;a)</font>
+                        </b>
+                    </div>
+                </td>
+
+            </tr>
+            <!---->
+            <tr aling=center bgcolor=#003366>
+                <td bgcolor=#A0A0A0>
+                    <div align=center>
+                        <b>
+                            <font color=#F4F4F4>MAX</font>
+                        </b>
+                    </div>
+                </td>
+                <td bgcolor=#A0A0A0>
+                    <div align=center>
+                        <b>
+                            <font color=#F4F4F4>MIN</font>
+                        </b>
+                    </div>
+                </td>
+
+                <td bgcolor=#A0A0A0>
+                    <div align=center>
+                        <b>
+                            <font color=#F4F4F4>TOTAL</font>
+                        </b>
+                    </div>
+                </td>
+
+            </tr>
+            
+
+                    <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-01</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>16.2</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-5.2</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            75.2                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-02</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17.6</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-6</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            72.6                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-03</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-6.6</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            74.8                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-04</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>18.2</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-5.2</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            74.4                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-05</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>16.6</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-4.8</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            77.0                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-06</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17.6</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-6</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            71.1                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-07</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>16.4</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-6.8</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            72.0                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-08</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-5.2</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            70.5                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-09</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>16.2</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-7.6</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            71.8                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-10</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17.2</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-6</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            70.8                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-11</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>16.4</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-5</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            77.9                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-12</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17.6</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-4.2</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            69.6                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-13</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>18</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-4.4</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            72.6                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-14</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>18.2</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-4.6</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            68.3                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-15</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>19.4</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-6</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            71.5                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-16</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17.6</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-5</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            72.2                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-17</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>19.4</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-3.2</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            75.8                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-18</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17.4</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-2.6</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            75.4                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-19</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>14.2</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-1.2</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            72.5                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-20</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>12.4</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>.8</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            82.4                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-21</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>13.8</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>2.2</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            75.0                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-22</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>16.4</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-3.2</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            74.8                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-23</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17.6</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-4.2</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            71.9                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-24</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>16.8</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-5.8</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            76.0                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-25</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17.6</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-4</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            68.2                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-26</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>15.8</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-4.4</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            78.2                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-27</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17.2</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-5.4</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            72.3                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-28</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>16.8</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-6</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            76.7                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-29</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>18.4</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-5.6</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            72.3                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-06-30</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-.8</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            69.5                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                                <tr aling=center>
+                    <!-- Fecha -->
+                    <td>
+                        <div align=center>2024-07-01</div>
+                    </td>
+                    <!-- Temperatura Max -->
+                    <td>
+                        <div align=center>17.6</div>
+                    </td>
+                    <!-- Temperatura Min -->
+                    <td>
+                        <div align=center>-4</div>
+                    </td>
+                    <!-- Humedad Relativa -->
+                    <td>
+                        <div align="center">
+                            64.9                        </div>
+                    </td>
+                    <!-- Precipitacion Total -->
+                    <td>
+                        <div align=center>0.0</div>
+                    </td>
+                </tr>
+                
+</table>
+
+<script type='text/javascript' src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+</body>
+</html>

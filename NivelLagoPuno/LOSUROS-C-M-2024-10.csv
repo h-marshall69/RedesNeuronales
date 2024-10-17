@@ -1,0 +1,43 @@
+﻿Fuente:SENAMHI / DRD
+* Datos sin control de calidad.
+* El uso de estos datos será de entera responsabilidad del usuario.
+
+Leyenda:* S/D = Sin Datos.
+* T = Trazas (Precipitación < 0.1 mm/día).
+
+,Estación:LOSUROS
+,Departamento:PUNO,Provincia:PUNO,Distrito:PUNO
+,Latitud:15°49'13.4'',Longitud:69°58'26.9'',Altitud:3819,msnm.
+,Tipo:CO,-Meteorológica,Código:100088
+AÑO / MES / DÍA,TEMPERATURA (°C),HUMEDAD RELATIVA (%),PRECIPITACIÓN (mm/día)
+MAX,MIN,TOTAL
+2024-10-01,20
+,1,70.1,0.0
+2024-10-02,20.6
+,.6,68.0,0.0
+2024-10-03,16.2
+,3.2,78.3,0.0
+2024-10-04,18.8
+,-.8,72.3,0.0
+2024-10-05,18.2
+,1.6,71.0,0.0
+2024-10-06,17.6
+,1,76.9,0.0
+2024-10-07,18.4
+,2,78.0,2.9
+2024-10-08,20.2
+,3.6,S/D,9.4
+2024-10-09,18
+,1.8,84.4,0.0
+2024-10-10,20.6
+,-1.2,62.1,0.0
+2024-10-11,20
+,-4.4,61.9,0.0
+2024-10-12,19.4
+,1.6,75.8,11.3
+2024-10-13,17
+,.4,S/D,0.0
+2024-10-14,17.6
+,4.8,75.7,0.0
+2024-10-15,18.4
+,1.8,70.2,7.8
